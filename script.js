@@ -1,4 +1,5 @@
 var url =  "https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/GDP-data.json";
+
 var allData = [];
 var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
@@ -58,8 +59,6 @@ $.getJSON(url, function( response) {
 
 
 
-
-
     d3.select(".chart").append("text")
         .attr("text-anchor", "middle")
         .style("font-weight","bold")
@@ -84,6 +83,7 @@ $.getJSON(url, function( response) {
         .style("text-anchor", "end")
         .style("font-weight","bold")
         .style("font-size","10pt");
+
 
     d3.select(".chart")
         .append("g")
